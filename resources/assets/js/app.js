@@ -11,6 +11,7 @@ require('./bootstrap');
 $( document ).ready(function() {
   CKEDITOR.replace( 'description_short' );
   CKEDITOR.replace( 'description' );
+  CKEDITOR.replace( 'image_show' );
 });
 
 window.Vue = require('vue');

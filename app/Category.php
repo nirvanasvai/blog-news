@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Nirvana;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -24,7 +24,7 @@ class Category extends Model
     // Polymorphic relation with articles
     public function articles()
     {
-      return $this->morphedByMany('App\Article', 'categoryable');
+      return $this->morphedByMany('Nirvana\Article', 'categoryable');
     }
 
     public function scopeLastCategories($query, $count)

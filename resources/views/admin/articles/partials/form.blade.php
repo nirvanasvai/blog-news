@@ -3,9 +3,17 @@
   @if (isset($article->id))
     <option value="0" @if ($article->published == 0) selected="" @endif>Не опубликовано</option>
     <option value="1" @if ($article->published == 1) selected="" @endif>Опубликовано</option>
+    <option value="2" @if ($article->published == 2) selected="" @endif>Нижрый раздел</option>
+    <option value="3" @if ($article->published == 3) selected="" @endif>Головной</option>
+    <option value="4" @if ($article->published == 4) selected="" @endif>Kaz</option>
+    <option value="5" @if ($article->published == 5) selected="" @endif>World</option>
   @else
     <option value="0">Не опубликовано</option>
     <option value="1">Опубликовано</option>
+    <option value="2">Нижный раздел</option>
+    <option value="3">Головной</option>
+    <option value="4">Kaz</option>
+    <option value="5">World</option>
   @endif
 </select>
 
@@ -19,6 +27,9 @@
 <select class="form-control" name="categories[]" multiple="">
   @include('admin.articles.partials.categories', ['categories' => $categories])
 </select>
+
+<label for="">Photo</label>
+<textarea class="form-control" id="image_show" name="image_show">{{$article->image_show or ""}}</textarea>
 
 <label for="">Краткое описание</label>
 <textarea class="form-control" id="description_short" name="description_short">{{$article->description_short or ""}}</textarea>

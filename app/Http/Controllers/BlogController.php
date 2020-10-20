@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Nirvana\Http\Controllers;
 
-use App\Category;
-use App\Article;
+use Nirvana\Category;
+use Nirvana\Article;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller

@@ -1,6 +1,6 @@
 <?php
 
-return [
+return array(
 
     /*
     |--------------------------------------------------------------------------
@@ -136,7 +136,7 @@ return [
     |
     */
 
-    'providers' => [
+    'providers' => array(
 
         /*
          * Laravel Framework Service Providers...
@@ -171,18 +171,18 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Nirvana\Providers\AppServiceProvider::class,
+        Nirvana\Providers\AuthServiceProvider::class,
+        // Nirvana\Providers\BroadcastServiceProvider::class,
+        Nirvana\Providers\EventServiceProvider::class,
+        Nirvana\Providers\RouteServiceProvider::class,
 
         // Our packages
         Unisharp\Ckeditor\ServiceProvider::class,
 
         // Own providers
-        App\Providers\BlogServiceProvider::class,
-    ],
+        Nirvana\Providers\BlogServiceProvider::class,
+    ),
 
     /*
     |--------------------------------------------------------------------------
@@ -195,7 +195,7 @@ return [
     |
     */
 
-    'aliases' => [
+    'aliases' => array(
 
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
@@ -231,6 +231,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-    ],
+    ),
 
-];
+);

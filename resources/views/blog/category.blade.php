@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', $category->title . " - DKA-DEVELOP")
+@section('title', $category->title . " - Nirvana")
 
 @section('content')
-	
+	<div class="jumbotron">
 	<div class="container">
 		@forelse ($articles as $article)
 			<div class="row">
 				<div class="col-sm-12">
-					<h2><a href="{{route('article', $article->slug)}}">{{$article->title}}</a></h2>
-					<p>{!!$article->description_short!!}</p>
+					<h2 class="display-6">{{$article->title}} </h2>
+					<h4 class="">{!!$article->description_short!!} </h4>
 				</div>
 			</div>
 		@empty

@@ -2,10 +2,12 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
+    <div class="row mt-4">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <a  class="btn bg-warning" href="/admin">
+                <div class="panel-heading">Панель Приборов</div>
+                </a>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -14,10 +16,12 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                        Вы вошли в систему!
+
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
+

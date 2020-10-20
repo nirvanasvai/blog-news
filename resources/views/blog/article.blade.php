@@ -5,12 +5,22 @@
 @section('meta_description', $article->meta_description)
 
 @section('content')
-	<div class="container">
+	<style>
+		#article_desc img{
+			width: 20px;
+		}
+	</style>
+	<div class="container-md">
 		<div class="row">
 			<div class="col-sm-12">
 				<h1>{{$article->title}}</h1>
-				<p>{!!$article->description!!}</p>
+				<p>{!!$article->description_short!!}</p>
+				<p id = "article_desc">{!!$article->description!!}</p>
 			</div>
 		</div>
+		<a href="{{url('/')}}">Назад</a>
 	</div>
+
+
+
 @endsection

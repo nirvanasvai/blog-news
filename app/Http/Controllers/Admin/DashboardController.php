@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace Nirvana\Http\Controllers\Admin;
 
-use App\Article;
-use App\Category;
+use Nirvana\Article;
+use Nirvana\Category;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Nirvana\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
