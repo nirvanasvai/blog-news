@@ -1,5 +1,3 @@
-let mix = require('laravel-mix');
-//fech
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,5 +9,7 @@ let mix = require('laravel-mix');
  |
  */
 
+let mix = require('laravel-mix');
+//fech
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');

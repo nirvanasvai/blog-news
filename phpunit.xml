@@ -12,6 +12,9 @@
         <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
+<!--        <hidden v-bind:key="function">-->
+<!--            -->
+<!--        </hidden>-->
 
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests/Unit</directory>

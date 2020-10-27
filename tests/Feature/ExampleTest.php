@@ -10,6 +10,7 @@ class ExampleTest extends TestCase
     /**
      * A basic test example.
      *
+     * $blog.test
      * @return void
      */
     public function testBasicTest()
